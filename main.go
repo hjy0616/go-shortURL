@@ -38,7 +38,7 @@ type App struct {
 
 func newApp() (*App, error) {
 	//LevelDB 클라이언트 생성
-	dbClient, err := db.NewLevelDBClient("./urlstore.db")
+	dbClient, err := db.NewLevelDBClient("./db/database/")
 	if err != nil {
 		return nil, err
 	}
